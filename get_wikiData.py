@@ -50,7 +50,7 @@ page = BeautifulSoup(data)
 fullTableLinks = [] #will use this to save links to full tables not on this page
 match = re.compile('(List\_of\_rampage\_killers:\_)') # find only the links we want
 
-# check links for full tables
+# check links
 for link in page.findAll('a'):
     href = link.get('href')
     if href:
