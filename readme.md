@@ -121,3 +121,50 @@ for table in pageTables:
         f.close()
 ```
 
+#### JSON to CSV 
+
+The script is a complete version. But it is also helpful, so I'll add it here:
+
+
+```python
+
+#Import the necessary libraries
+#	json: easy json import/exporting
+#	csv: easy csv import/exporting
+
+import json
+import csv
+
+fileToConvert = 'data/full_incidence_data.json'
+fileToWrite = 'data/full_incidence_data.csv'
+
+#open our clean JSON file
+f = open(fileToConvert)
+data = json.load(f)
+f.close()
+print('got data')
+
+#make new CSV file to save data to
+f = open(fileToWrite, 'w')
+csv_file = csv.writer(f)
+
+print('writing...')
+
+tableHeader = []
+for key in data[0].keys():
+   tableHeader.append(key.encode('utf-8'))
+
+# Write CSV Header
+csv_file.writerow(tableHeader)
+
+for item in data:
+    #make new CSV row for each JSON object
+    row = []
+    for key, value in item.iteritems():
+        #need to be careful encoding
+        row.append(value.encode('utf-8'))
+    #write our row
+    csv_file.writerow(row)
+
+f.close()
+```
