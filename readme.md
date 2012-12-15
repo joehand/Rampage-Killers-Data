@@ -3,6 +3,8 @@ Motivated by [Enrico Bertini](https://twitter.com/FILWD/status/27982719549559193
 ***Let me know what you make with it.*** I may take a shot as a visualization as well.
 
 ##Data Files
+**All the data is in data folder. `table-data.md` is just an html version so you can look through it.**
+
 There are two full data sets (one CSV, one JSON). The other files are each individual tables as shown in wikipedia. The table name has been added to all sets for reference. 
 
 Data has some cleanliness issues. It is somewhat easy to address any systemic issues when scraping data. Some cleaning will need to be done by hand. 
