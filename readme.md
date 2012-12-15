@@ -11,6 +11,9 @@ Data has some cleanliness issues. It is somewhat easy to address any systemic is
 
 The reference links are useless right now. If I have some time, I can figure out how to get the reference links off wikipedia in the file as well.
 
+###Gun Ownership/Muder Data
+The Guardian has data available about Worldwide firearm murder and ownership - it may be interesting to compare to this data set. [Google Spreadsheet](https://docs.google.com/spreadsheet/ccc?key=0AonYZs4MzlZbdExSbktqRWpLMjNUMkFGVk5VODRyTnc#gid=0)
+
 ##Python scripts
 The scripts use beautiful soup to parse the wikipedia pages. Wikipedia requires send a user-agent, urllib2 is used for that.
 
